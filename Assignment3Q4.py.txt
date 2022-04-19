@@ -1,0 +1,20 @@
+#name: Imraan Jacobs 
+#Student number: 11641584
+
+print("Greetings and welcome user; This program writes to a file and will prompt you to write 10 Covid facts")
+
+
+#This is  Opening a file 
+file1 = open('myfile.txt', 'w') 
+for i in range(10):
+    fact=input("Write down your covid fact in a sentence: \n")#asking user input
+    file1.write(fact)
+
+    
+file1.close() 
+  
+
+# written to file or not 
+file1 = open('myfile.txt', 'r') 
+print(file1.read()) 
+file1.close() 
